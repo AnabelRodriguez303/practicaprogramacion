@@ -1,0 +1,209 @@
+/*GENERAL*/
+
+body {
+    margin:0;
+    font-family: 'Arimo', sans-serif;
+    line-height: 1;
+}
+
+:root {
+    --rosa: #ffafb2;
+    --dorado: #FFB800;
+    --blanco: #ffffff;
+    --rojo: #f00;
+
+}
+
+/*letras*/
+p, h2, h3, #cc{
+    margin:20px;
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Asap', sans-serif;
+}
+
+h2{
+    color:var(--dorado);
+}
+
+
+/*contenido*/
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+button{
+    color:var(--blanco);
+    background-color: var(--rosa);
+    margin:5px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/*header*/
+header{
+    background-color: var(--rosa);
+    padding: 0.1px;
+}
+
+#ii{
+    width:60px;
+    margin:7px
+}
+
+.boton{
+    margin-top:20px;
+    margin-left:5px;
+    
+
+}
+
+#titulo{
+    background-color:var(--blanco);
+    text-align: center;
+    color:var(--dorado);
+    font-size:x-small;
+    padding:0px 8px 0px 8px ;
+    border-style: inset;
+    border-color:var(--dorado);
+
+}
+
+#menu{
+    display:flex;
+}
+
+.enlace{
+    margin:5px;
+    margin-top: 21px;
+    margin-right:6px;
+    list-style: none;
+}
+
+li a{
+    margin:20px;
+    color:var(--blanco);
+    
+    
+}
+
+/*CONTACTO*/
+
+#contacto h2{
+    color:var(--blanco);
+}
+
+#contacto{
+    background-color: var(--rosa);
+}
+
+/*NOTICIAS*/
+
+#noticias h2{
+    color:var(--blanco);
+}
+
+#noticias h3{
+    color: var(--rojo);
+    font-family: impact;
+    font-size: 40px;
+    
+    
+    
+}
+
+#noticias  p{
+   background-color: var(--blanco) ; 
+
+}
+
+#noticias{
+    background-image: url(img/foto5.jpeg);
+    background-size: 1300px 300px;
+    justify-items: center;
+    padding:2px;
+
+
+}
+
+#foto3{
+    width:400px ;
+    height: 200px;
+    margin-left: 415px;  
+    
+}
+
+/*CURSOS*/
+
+#cursos{
+    border-color: var(--dorado);
+    border-style: outset;
+    justify-items: center;
+    margin: 10px;
+    
+}
+
+#cursos h2{
+    text-decoration:underline;
+}
+
+
+
+.card{
+    text-align: center;
+    justify-items:center;
+    border-radius: 12px;
+    border-color: black;
+    width: 300px;
+    height: 400px;
+    margin:20px;
+    box-shadow: 10px 5px 20px black;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.nn img {
+    overflow:auto;
+    width: 250px;
+    height:150px;
+
+}
+
+.nn button{
+    height: 40px;
+    width:150px;
+}
+
+.nn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    text-align:center;
+}
+
+
+
+
+
+
