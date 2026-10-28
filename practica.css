@@ -1,18 +1,20 @@
 /*GENERAL*/
+:root {
+    --Turquesa: #53dfd5;
+    --lila: #E6E6FA;
+    --blanco: #ffffff;
+    --marron: #443627;
+    --rojo: #f00;
+
+}
 
 body {
     margin:0;
     font-family: 'Arimo', sans-serif;
     line-height: 1;
+    background-color: var(--lila);
 }
 
-:root {
-    --rosa: #ffafb2;
-    --dorado: #FFB800;
-    --blanco: #ffffff;
-    --rojo: #f00;
-
-}
 
 /*letras*/
 p, h2, h3, #cc{
@@ -25,7 +27,11 @@ h1, h2, h3 {
 }
 
 h2{
-    color:var(--dorado);
+    color:var( --Turquesa);
+}
+
+#servicio h2{
+    font-size: 15px;
 }
 
 
@@ -33,87 +39,96 @@ h2{
 .contenedor {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    
+}
+
+
+/*header*/
+nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+header{
+    background-color: var( --Turquesa);
+}
+
+/*es el id del listado de navegaion*/
+#menu{
+   display:flex;
+   justify-content: center;
+    align-items: center;
+}
+
+#ii{ /*logo*/
+    width:60px;
+    margin:7px
 }
 
 
 button{
     color:var(--blanco);
-    background-color: var(--rosa);
-    margin:5px;
+    background-color: var(--marron);
+    text-decoration:none;
+    
     
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+.boton a {
+    color: var(--blanco);
+    text-decoration: none;
 }
 
 
-
-/*header*/
-header{
-    background-color: var(--rosa);
-    padding: 0.1px;
-}
-
-#ii{
-    width:60px;
-    margin:7px
-}
 
 .boton{
-    margin-top:20px;
+    color:var(--lila);
     margin-left:5px;
+    text-decoration:none;
+    border-radius: 8px;
+    border: 2px solid #3333;
+    border-radius: 15px;
+    padding: 6px 14px;
+    
     
 
 }
 
 #titulo{
-    background-color:var(--blanco);
-    text-align: center;
-    color:var(--dorado);
-    font-size:x-small;
-    padding:0px 8px 0px 8px ;
-    border-style: inset;
-    border-color:var(--dorado);
-
+    font-size: 10px;
+    color:var( --blanco);
 }
 
-#menu{
-    display:flex;
-}
 
 .enlace{
-    margin:5px;
-    margin-top: 21px;
-    margin-right:6px;
-    list-style: none;
+   list-style: none;
 }
 
 li a{
     margin:20px;
     color:var(--blanco);
-    
-    
+    text-decoration: none;
 }
 
 /*CONTACTO*/
 
 #contacto h2{
-    color:var(--blanco);
+    color:var( --Turquesa);
+    padding: 20px;
+    justify-content: center;
 }
 
 #contacto{
-    background-color: var(--rosa);
+    background-color: var( --blanco);
 }
 
 /*NOTICIAS*/
 
 #noticias h2{
-    color:var(--blanco);
+    color:var( --Turquesa);
+    padding: 10px;
+   background-color: rgba(255, 255, 255, 0.6);
 }
 
 #noticias h3{
@@ -126,7 +141,7 @@ li a{
 }
 
 #noticias  p{
-   background-color: var(--blanco) ; 
+   background-color: var(--lila) ; 
 
 }
 
@@ -135,6 +150,7 @@ li a{
     background-size: 1300px 300px;
     justify-items: center;
     padding:2px;
+    margin: 10px;
 
 
 }
@@ -146,18 +162,28 @@ li a{
     
 }
 
-/*CURSOS*/
+/*servicios*/
+#servicios{
+display:flex;
+font-size: 20px;
+}
 
-#cursos{
-    border-color: var(--dorado);
-    border-style: outset;
-    justify-items: center;
-    margin: 10px;
+
+#fotonino{
+    width: 350px;
+    height: 300px;
     
 }
 
-#cursos h2{
-    text-decoration:underline;
+#textf{
+    background-color: var(--blanco);
+}
+
+/*CURSOS*/
+
+#sizetex {
+    font-size: 14px;
+
 }
 
 
@@ -169,8 +195,8 @@ li a{
     border-color: black;
     width: 300px;
     height: 400px;
-    margin:20px;
-    box-shadow: 10px 5px 20px black;
+    margin:15px;
+    box-shadow: 0 4px 12px black;
     transition: transform 0.3s;
 }
 .card:hover {
@@ -179,8 +205,8 @@ li a{
 
 .nn img {
     overflow:auto;
-    width: 250px;
-    height:150px;
+    width: 300px;
+    height:200px;
 
 }
 
@@ -192,7 +218,7 @@ li a{
 .nn{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 
@@ -200,6 +226,7 @@ li a{
 
 footer{
     text-align:center;
+    margin: 20px;
 }
 
 
