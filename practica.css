@@ -1,18 +1,22 @@
-/*GENERAL*/
 :root {
-    --Turquesa: #53dfd5;
-    --lila: #E6E6FA;
-    --blanco: #ffffff;
-    --marron: #443627;
-    --rojo: #f00;
-
+    --fondo:         #F6F1FB;  /* 60% fondo de la página (lila muy claro) */
+    --principal:     #5B2A86;  /* morado: títulos h2 */
+    --principal-osc: #3B1A5C;  /* morado oscuro: footer, fondo del título destacado */
+    --secundario:    #0B7A75;  /* turquesa oscuro: navbar */
+    --menta:         #D8F3F0;  /* turquesa muy claro: tarjetas */
+    --acento:        #FFC93C;  /* 10% botones y destacados */
+    --texto:         #2A1B3D;  /* párrafos */
+    --texto-suave:   #5A4B6B;  /* textos secundarios */
+    --blanco:        #ffffff;
+    --sombra:        rgba(0, 0, 0, .15);
 }
 
 body {
     margin:0;
     font-family: 'Arimo', sans-serif;
     line-height: 1;
-    background-color: var(--lila);
+    background-color: var(--fondo);
+    color: var(--texto);
 }
 
 
@@ -27,7 +31,7 @@ h1, h2, h3 {
 }
 
 h2{
-    color:var( --Turquesa);
+    color: var(--principal);
 }
 
 #servicio h2{
@@ -51,7 +55,7 @@ nav {
 }
 
 header{
-    background-color: var( --Turquesa);
+    background-color: var(--secundario);
 }
 
 /*es el id del listado de navegaion*/
@@ -68,26 +72,27 @@ header{
 
 
 button{
-    color:var(--blanco);
-    background-color: var(--marron);
+    color: var(--texto);
+    background-color: var(--acento);
     text-decoration:none;
     
     
 }
 
 .boton a {
-    color: var(--blanco);
+    color: var(--texto);
     text-decoration: none;
 }
 
 
 
 .boton{
-    color:var(--lila);
+    color: var(--texto);
+    background-color: var(--acento);
     margin-left:5px;
     text-decoration:none;
     border-radius: 8px;
-    border: 2px solid #3333;
+    border: 2px solid var(--sombra);
     border-radius: 15px;
     padding: 6px 14px;
     
@@ -97,7 +102,7 @@ button{
 
 #titulo{
     font-size: 10px;
-    color:var( --blanco);
+    color: var(--blanco);
 }
 
 
@@ -107,32 +112,33 @@ button{
 
 li a{
     margin:20px;
-    color:var(--blanco);
+    color: var(--blanco);
     text-decoration: none;
 }
 
 /*CONTACTO*/
 
 #contacto h2{
-    color:var( --Turquesa);
+    color: var(--principal);
     padding: 20px;
     justify-content: center;
 }
 
 #contacto{
-    background-color: var( --blanco);
+    background-color: var(--blanco);
 }
 
 /*NOTICIAS*/
 
 #noticias h2{
-    color:var( --Turquesa);
+    color: var(--principal);
     padding: 10px;
-   background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #noticias h3{
-    color: var(--rojo);
+    color: var(--acento);
+    background-color: var(--principal-osc);
     font-family: impact;
     font-size: 40px;
     
@@ -141,7 +147,8 @@ li a{
 }
 
 #noticias  p{
-   background-color: var(--lila) ; 
+   background-color: var(--fondo);
+   color: var(--texto);
 
 }
 
@@ -192,11 +199,12 @@ font-size: 20px;
     text-align: center;
     justify-items:center;
     border-radius: 12px;
-    border-color: black;
+    border-color: var(--sombra);
+    background-color: var(--menta);
     width: 300px;
     height: 400px;
     margin:15px;
-    box-shadow: 0 4px 12px black;
+    box-shadow: 0 4px 12px var(--sombra);
     transition: transform 0.3s;
 }
 .card:hover {
@@ -227,10 +235,11 @@ font-size: 20px;
 footer{
     text-align:center;
     margin: 20px;
+    padding: 20px;
+    background-color: var(--principal-osc);
+    color: var(--blanco);
 }
 
-
-
-
-
-
+footer a{
+    color: var(--blanco);
+}
